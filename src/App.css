@@ -23,6 +23,10 @@
   color: #082b70;
 }
 
+.undoButton.disabled {
+  color: #808080;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

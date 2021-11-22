@@ -5,7 +5,12 @@ import React from 'react';
 class FakeUndoButton extends React.Component {
   render() {
   return (
-    <div className="undo"><button onClick={this.props.onClick} className="undoButton">Undo</button></div>
+    <div className="undo">
+      <button 
+        onClick={this.props.onClick} 
+        className={this.props.undone ? "disabled undoButton" : "undoButton"}>
+          Undo</button>
+    </div>
   );
   }
 }
@@ -44,7 +49,7 @@ class App extends React.Component {
         >
           Learn React
         </a>
-        <FakeUndoButton onClick={this.onUndoClick} />
+        <FakeUndoButton onClick={this.onUndoClick} undone={this.state.undone} />
       </header>
     </div>
   );
