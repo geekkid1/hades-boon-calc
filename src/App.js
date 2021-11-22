@@ -5,7 +5,7 @@ import React from 'react';
 class FakeUndoButton extends React.Component {
   render() {
   return (
-    <button onClick={this.props.onClick}>Undo</button>
+    <div className="undo"><button onClick={this.props.onClick} className="undoButton">Undo</button></div>
   );
   }
 }

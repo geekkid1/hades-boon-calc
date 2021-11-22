@@ -13,6 +13,16 @@
   }
 }
 
+.undo {
+  padding-top: 5px;
+}
+
+.undoButton {
+  padding: 5px;
+  font-size: 18px;
+  color: #082b70;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
