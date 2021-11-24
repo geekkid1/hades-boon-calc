@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import SelectSearch from 'react-select-search';
 
 class FakeUndoButton extends React.Component {
   render() {
@@ -14,6 +15,11 @@ class FakeUndoButton extends React.Component {
   );
   }
 }
+
+const options = [
+  {name: 'First Option', value: "fo"},
+  {name: 'Second Option', value: "so"}
+]
 
 class App extends React.Component {
   constructor(props) {
@@ -50,6 +56,7 @@ class App extends React.Component {
           Learn React
         </a>
         <FakeUndoButton onClick={this.onUndoClick} undone={this.state.undone} />
+        <SelectSearch options={options} name="test" placeholder="Select One" />
       </header>
     </div>
   );
