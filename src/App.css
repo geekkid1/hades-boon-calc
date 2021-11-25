@@ -38,6 +38,11 @@
   color: white;
 }
 
+.selection {
+  color: black;
+  font-size: 18px;
+}
+
 .App-link {
   color: #61dafb;
 }
